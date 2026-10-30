@@ -8,7 +8,7 @@ const messageButton = document.querySelector("#message-button");
 const messageOutput = document.querySelector("#message-output");
 const clock = document.querySelector("#clock");
 const year = document.querySelector("#year");
-
+//test
 // A list is an easy way to store a few possible messages.
 const tinyReminders = [
   "you don't have to know everything to begin.",
