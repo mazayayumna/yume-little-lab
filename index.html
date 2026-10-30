@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0e6">
+  <meta name="description" content="My cozy little corner for coding experiments, notes, and tiny projects.">
+  <title>yume little lab ✿</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Site sidebar">
+      <a class="brand" href="#home" aria-label="yume little lab home">
+        <span class="brand-flower" aria-hidden="true">✿</span>
+        <span class="brand-name"><strong>yume</strong> little lab</span>
+      </a>
+
+      <p class="sidebar-intro">a smol corner of the internet<br>for things I'm figuring out ♡</p>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home"><span aria-hidden="true">⌂</span> home</a>
+        <a class="nav-link" href="#projects"><span aria-hidden="true">✳</span> projects</a>
+        <a class="nav-link" href="#notes"><span aria-hidden="true">✎</span> notebook</a>
+        <a class="nav-link" href="#about"><span aria-hidden="true">♡</span> about this place</a>
+      </nav>
+
+      <section class="learning-note paper-card" aria-labelledby="learning-title">
+        <span class="tape" aria-hidden="true"></span>
+        <p class="eyebrow" id="learning-title">currently tinkering</p>
+        <p class="learning-topic">Bioinformatics, Data, & a little WebDev</p>
+        <p class="tiny-note">sometimes 汉语 too! 🐼</p>
+      </section>
+
+      <div class="sidebar-bottom">
+        <p class="tiny-note">made slowly, with curiosity.</p>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+          <span aria-hidden="true" class="theme-icon">☾</span>
+          <span id="theme-label">night mode</span>
+        </button>
+      </div>
+    </aside>
+
+    <main id="main" class="main-content">
+      <header class="topline" id="home">
+        <p class="breadcrumb">my little corner <span aria-hidden="true">/</span> home</p>
+        <p class="local-time"><span class="status-dot" aria-hidden="true"></span><span id="clock">a small website, in progress</span></p>
+      </header>
+
+      <section class="welcome-section" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <!--<p class="eyebrow">hello, stranger! <span aria-hidden="true">✿</span></p>-->
+          <h1 id="welcome-title">Welcome to <br><span>yume little lab.</span></h1>
+          <p class="welcome-text">I accept things that are so over, the courage to say f- it I ball, and the wisdom to know I am so f-in back</p>
+          <div class="welcome-actions">
+            <a class="button button-primary" href="#projects">peek at my projects <span aria-hidden="true">↗</span></a>
+            <button class="button button-secondary" id="message-button" type="button">a tiny reminder ✨</button>
+          </div>
+          <p class="message-output" id="message-output" role="status" aria-live="polite">you don't have to know everything to begin.</p>
+        </div>
+        <div class="welcome-art" aria-label="Decorative illustration: a tiny plant beside a notebook" role="img">
+          <span class="sparkle sparkle-one" aria-hidden="true">✧</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+          <div class="sun-disc" aria-hidden="true"></div>
+          <div class="plant-pot" aria-hidden="true">
+            <span class="leaf leaf-one"></span>
+            <span class="leaf leaf-two"></span>
+            <span class="leaf leaf-three"></span>
+            <span class="stem"></span>
+            <span class="pot"></span>
+          </div>
+          <div class="mini-notebook" aria-hidden="true">
+            <!--<span>little ideas</span>-->
+            <i>✿</i>
+            <div class="notebook-lines"></div>
+          </div>
+          <!--<span class="art-caption" aria-hidden="true">grow at your own pace ♡</span>-->
+        </div>
+      </section>
+
+      <section class="section-block" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">bits & pieces</p>
+            <h2 id="projects-title">Things on my desk</h2>
+          </div>
+          <span class="section-doodle" aria-hidden="true">↴</span>
+        </div>
+        <div class="project-grid">
+          <!--<article class="project-card project-rose">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">✿</span>
+              <span class="project-status">in progress</span>
+            </div>
+            <h3>A tiny mood garden</h3>
+            <p>A little experiment in turning a daily mood into a growing digital garden.</p>
+            <div class="tag-list"><span>JavaScript</span><span>playground</span></div>
+            <a class="text-link" href="#notes">read the idea <span aria-hidden="true">↗</span></a>
+          </article>-->
+
+          <article class="project-card project-sage">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">⌘</span>
+              <span class="project-status">little experiment</span>
+            </div>
+            <h3>Data, but make it cute</h3>
+            <p>Exploring how small charts can make interesting data easier to understand.</p>
+            <div class="tag-list"><span>Python</span><span>visualization</span></div>
+            <a class="text-link" href="#notes">read the idea <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!--<article class="project-card project-butter">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">☼</span>
+              <span class="project-status">on the list</span>
+            </div>
+            <h3>My digital scrapbook</h3>
+            <p>A home for saved inspiration, favorite discoveries, and things worth remembering.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span></div>
+            <a class="text-link" href="#about">the little plan <span aria-hidden="true">↗</span></a>
+          </article>-->
+        </div>
+        <!--<p class="section-footnote"><span aria-hidden="true">✳</span> These are starter examples—swap them for your own projects whenever you're ready.</p>-->
+      </section>
+
+      <section class="notes-panel" id="notes" aria-labelledby="notes-title">
+        <div class="notes-icon" aria-hidden="true">✎</div>
+        <div class="notes-copy">
+          <p class="eyebrow">from the notebook</p>
+          <h2 id="notes-title">A note to future me</h2>
+          <p>Build the small version first. Let it be a little imperfect. You can always come back with fresh eyes, better skills, and another cup of tea.</p>
+        </div>
+        <span class="notes-heart" aria-hidden="true">♡</span>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">a tiny introduction</p>
+        <h2 id="about-title">Curious by nature, learning as I go.</h2>
+        <p>This is my personal playground: part notebook, part workshop, and part collection of things I made just because I wanted to. It’s okay if everything here is a work in progress.</p>
+      </section>
+
+      <footer class="site-footer">
+        <span>made with curiosity <span aria-hidden="true">♡</span></span>
+        <span>yume little lab · <span id="year"></span></span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
