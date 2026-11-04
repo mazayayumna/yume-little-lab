@@ -205,9 +205,9 @@ h1 span { color: var(--sage-deep); font-style: italic; }
 .plant-pot { position: absolute; bottom: 18%; left: 18%; width: 125px; height: 175px; }
 .stem { position: absolute; bottom: 55px; left: 61px; width: 4px; height: 90px; border-radius: 5px; background: #68815f; transform: rotate(4deg); }
 .leaf { position: absolute; z-index: 1; width: 45px; height: 25px; border-radius: 100% 0 100% 0; background: #8da481; }
-.leaf-one { bottom: 115px; left: 24px; transform: rotate(18deg); }
-.leaf-two { bottom: 140px; left: 58px; transform: rotate(-42deg) scale(0.9); background: #a8b99c; }
-.leaf-three { bottom: 82px; left: 63px; transform: rotate(-12deg) scale(0.85); background: #718a67; }
+.leaf-one { bottom: 115px; left: 19px; transform: rotate(18deg); }
+.leaf-two { bottom: 140px; left: 50px; transform: rotate(-42deg) scale(0.9); background: #a8b99c; }
+.leaf-three { bottom: 82px; left: 55px; transform: rotate(-12deg) scale(0.85); background: #718a67; }
 .pot { position: absolute; bottom: 0; left: 27px; width: 80px; height: 70px; border-radius: 10px 10px 24px 24px; background: #d7a6a0; clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%); }
 .mini-notebook {
   position: absolute;
