@@ -1,0 +1,18 @@
+.project-page {
+    width: min(850px, 90%);
+    margin: 4rem auto;
+}
+
+.project-page > a {
+    color: var(--sage-deep);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.project-header {
+    margin-block: 3rem;
+    padding: 3rem;
+    background: var(--paper-light);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+}
