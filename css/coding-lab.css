@@ -14,13 +14,6 @@ body {
     z-index: 2;
 }
 
-.nav-controls {
-    display: flex;
-    align-items: center;
-    gap: 200px;
-    margin-bottom: 5rem;
-}
-
 .project-page > a {
     color: var(--sage-deep);
     text-decoration: none;
