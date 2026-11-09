@@ -8,6 +8,40 @@ const messageButton = document.querySelector("#message-button");
 const messageOutput = document.querySelector("#message-output");
 const clock = document.querySelector("#clock");
 const year = document.querySelector("#year");
+const savedTheme = localStorage.getItem("theme");
+
+// Switch between the default cream palette and the dark palette.
+// 1. AS SOON AS ANY PAGE LOADS: Check the browser's "database" for the saved theme
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-mode");
+
+  // If the button exists on this page, update its text/icon to match the dark theme
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", "true");
+    themeToggle.textContent = "day mode";
+    themeIcon.textContent = "☀";
+  }
+}
+
+// 2. WHEN THE BUTTON IS CLICKED: Toggle the class and save the new choice
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark-mode");
+    
+    // Save their choice to the browser's local storage
+    if (isDark) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+
+  // Update the accessible state and the button's visible label.
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeLabel.textContent = isDark ? "day mode" : "night mode";
+  themeIcon.textContent = isDark ? "☀" : "☾";
+  });
+}
 
 // A list is an easy way to store a few possible messages.
 const tinyReminders = [
@@ -26,15 +60,7 @@ messageButton.addEventListener("click", () => {
   messageOutput.textContent = tinyReminders[randomIndex];
 });
 
-// Switch between the default cream palette and the dark palette.
-themeToggle.addEventListener("click", () => {
-  const isDark = document.body.classList.toggle("dark-mode");
 
-  // Update the accessible state and the button's visible label.
-  themeToggle.setAttribute("aria-pressed", String(isDark));
-  themeLabel.textContent = isDark ? "day mode" : "night mode";
-  themeIcon.textContent = isDark ? "☀" : "☾";
-});
 
 // Show the visitor's local time. This runs on their device, not a server.
 function updateClock() {
