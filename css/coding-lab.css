@@ -4,6 +4,12 @@ body {
     background-repeat: repeat;
 }
 
+body.dark-mode {
+    /* Creates a 150x150px invisible square, writes emojis in it, and repeats it endlessly */
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='150'><text x='10' y='50' font-size='30'>⚗️😃😢🛠️🏪</text></svg>");
+    background-repeat: repeat;
+}
+
 .project-page {
     width: min(850px, 90%);
     margin: 4rem auto;
@@ -12,6 +18,11 @@ body {
     border-radius: 12px;
     position: relative;
     z-index: 2;
+}
+
+body.dark-mode .project-page {
+     background-color: #222222;
+     color: #fdfbf7;
 }
 
 .project-page > a {
